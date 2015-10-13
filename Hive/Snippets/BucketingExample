@@ -1,0 +1,11 @@
+CREATE TABLE stocks( market string, stock  string, sdate date, sopen double, shigh double, slow double, sclose double, volume bigint, ad_close double) row format delimited fields terminated by '\t';
+
+CREATE TABLE bucketed_stocks( market string, stock  string, sdate date, sopen double, shigh double, slow double, sclose double, volume bigint, ad_close double) COMMENT 'A bucketed sorted stocks table' CLUSTERED BY (stock) SORTED BY (volume) INTO 32 BUCKETS STORED AS textfile;
+
+load data local inpath '/root/naga/stocks' into table stocks
+
+select * from stocks limit 10;
+
+set hive.enforce.bucketing = true;
+
+insert into bucketed_stocks select * from stocks;
