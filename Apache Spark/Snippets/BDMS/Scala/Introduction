@@ -1,0 +1,20 @@
+> Scala was created by Martin Ordersky. Scala stands for "Scalable Language"
+> It is blend of functional, Object oreinted and powerful type system
+> Scala is mix of the following things:
+  1.  Blend of functional and object oreinted
+  2.  Expressive syntax and static typing
+  3.  Advanced Language features and rich Java integration
+  
+> Scala has the ability to focus on objetcs or functions in a program, depending on what is the most prominent
+> Scala has several features which are not there in Java, but scala runs over JVM.
+
+> Object-oriented programming                 Functional programming
+  Composition of objects (nouns)              Composition of functions (verbs)
+  Encapsulated stateful interaction           Deferred side effects
+  Iterative algorithms                        Recursive algorithms and continuations
+  Imperative flow                             Lazy evaluation
+  N/A                                         Pattern matching
+
+> Object orientation can focus on the nouns of the system and functional programming can compose the verbs
+> AnyRef is equivalent of java.lang.Object in Scala
+> Scala defines three types of variables val, var, lazy val

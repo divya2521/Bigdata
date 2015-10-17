@@ -1,0 +1,19 @@
+Finding the factorial in Scala:
+
+package com.examples.functions
+
+object Fact {
+  def fact(num: Int): Int = {
+
+    if (num == 0 || num == 1) {
+      return 1;
+    } else {
+      return num * fact(num - 1);
+    }
+  }
+
+  def main(args: Array[String]) {
+    val f = fact(6)
+    println(f)
+  }
+}

@@ -1,0 +1,10 @@
+Apache Spark is an Open Source, fast and general engine for large-scale data processing.
+It is a distributed computational paradigm like "MapReduce", and it is alternative to MapReduce.
+Spark has an advanced DAG execution engine that supports cyclic data flow and in-memory computing
+
+Features of Spark:
+
+1. Speed
+2. Ease of Use
+3. Generality
+4. Runs Everywhere
