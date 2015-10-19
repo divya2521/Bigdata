@@ -10,7 +10,7 @@ public class NamedClassExample {
 	public static void main(String[] args) {
 		String logfile = "hdfs://lab:9000/logs/ganesh.log";
 		SparkConf conf = new SparkConf();
-		conf.setAppName("BhuvanTestAPP");
+		conf.setAppName("ganeshTestAPP");
 		JavaSparkContext sc = new JavaSparkContext("spark://rlab:7077", "appname");
 	JavaRDD<String> logdata  = 	sc.textFile(logfile);
 	JavaRDD<String>erros = logdata.filter(new Contains());

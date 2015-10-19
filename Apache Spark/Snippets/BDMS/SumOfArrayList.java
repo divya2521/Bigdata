@@ -12,7 +12,7 @@ public class SumOfArrayList {
 	public static void main(String[] args) {
 		SparkConf conf = new SparkConf();
 		conf.setAppName("Sum of array integers" );
-		JavaSparkContext sc = new JavaSparkContext("spark://lab:7077", "bhuvan");
+		JavaSparkContext sc = new JavaSparkContext("spark://lab:7077", "ganesh");
 		
 		
 		JavaRDD<Integer> rdd = sc.parallelize(Arrays.asList(1,2,3,4,5,6,7));

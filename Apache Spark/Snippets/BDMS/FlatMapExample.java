@@ -15,7 +15,7 @@ public class FlatMapExample {
 	conf.setMaster("spark://lab:7077");
 	JavaSparkContext sc = new JavaSparkContext(conf);
 	
-	JavaRDD<String> stringrdd = sc.parallelize(Arrays.asList("Bhuvan,Brijesh,nanjesh,Dev"));
+	JavaRDD<String> stringrdd = sc.parallelize(Arrays.asList("ganesh,Brijesh,nanjesh,Dev"));
 	JavaRDD<String> words = stringrdd.flatMap(new FlatMapex());
 	
 	System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!");

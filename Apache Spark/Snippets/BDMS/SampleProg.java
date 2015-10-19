@@ -11,7 +11,7 @@ public class SampleProg {
 		String logfile = "hdfs://lab:9000/logs/ganesh.log";
 		SparkConf conf = new SparkConf();
 		//conf.setAppName("TestAPP");
-		String SPARK_HOME="/home/bhuvan/bigdata/spark-1.1.0";
+		String SPARK_HOME="/home/ganesh/bigdata/spark-1.1.0";
 		
 		//JavaSparkContext sc = new JavaSparkContext(conf);
 		JavaSparkContext sc = new JavaSparkContext("spark://rlab:7077", "appname");

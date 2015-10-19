@@ -14,8 +14,8 @@ public class SetFuncationsExample {
 	conf.setMaster("spark://lab:7077");
 
 	JavaSparkContext sc = new JavaSparkContext(conf);
-	JavaRDD<String> rdd1 = sc.parallelize(Arrays.asList("bhuvan","panday","shashi","shyamu"));
-	JavaRDD<String> rdd2 = sc.parallelize(Arrays.asList("dev","Nanja","bhuvan","shyamu"));
+	JavaRDD<String> rdd1 = sc.parallelize(Arrays.asList("ganesh","panday","shashi","shyamu"));
+	JavaRDD<String> rdd2 = sc.parallelize(Arrays.asList("dev","Nanja","ganesh","shyamu"));
 	System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 	System.out.println("Union is :" + rdd1.union(rdd2).collect());
 	System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
